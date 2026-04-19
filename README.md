@@ -8,18 +8,18 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Lucca Campos Xavier
+- Matricula:1645973
+- Proposta de projeto escolhida: Lugares e Experiências
+- Breve descrição sobre seu projeto: Um site que permite o usuario criar uma postagem divulgando uma partida de algum esporte que ele esteja organizando, e permite que outros usuarios se inscrevam nessas partidas para que possam participar.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![](public/images/print1.png)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![](public/images/print2.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
