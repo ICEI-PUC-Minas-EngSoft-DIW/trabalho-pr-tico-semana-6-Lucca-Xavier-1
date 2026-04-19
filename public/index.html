@@ -4,9 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">Rachão</div>
+            <ul class="nav-links">
+                <li><a href="#">Buscar Jogos</a></li>
+                <li><a href="#">Minhas Partidas</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a class="btn-entrar" href="#">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Encontre sua próxima partida</h1>
+            <p>Vôlei, futebol e muito mais. Perto de você, no horário que preferir.</p>
+        
+            <form class="busca-form" action="#" method="get">
+                <input type="date" name="data" aria-label="Data" />
+                <select name="horario" aria-label="Horário">
+                    <option value="" disabled selected>Horário</option>
+                    <option>Manhã (6h-12h)</option>
+                    <option>Tarde (12h-18h)</option>
+                    <option>Noite (18h-23h)</option>
+                </select>
+                <select name="esportes" aria-label="Tipo de esporte">
+                    <option value="" disabled selected>Esportes</option>
+                    <option>Volei de Quadra</option>
+                    <option>Volei de areia</option>
+                    <option>Futebol</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>    
+        
+        <section class="partidas">
+            
+            <h2>Partidas disponíveis</h2>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/600/300" alt="Quadra de vôlei de areia" />
+                    <span class="card-badge">Vôlei de Areia</span>
+                    <div class="card-body">
+                        <h3>Arena Beach Sports</h3>
+                        <p class="card-endereco">📍 Av. Contorno, 1200 — Savassi</p>
+                        <div class="card-info">
+                            <span>👥 3x3 jogadores</span>
+                            <span>🏐 Vôlei</span>
+                        </div>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="horario">🕖 10:00</span>
+                        <a class="btn-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/601/300" alt="Quadra de vôlei de areia" />
+                    <span class="card-badge">Vôlei de Quadra</span>
+                    <div class="card-body">
+                        <h3>Arena Estrela do Norte</h3>
+                        <p class="card-endereco">📍 Rua dos Timbiras, 1450 - Lourdes</p>
+                        <div class="card-info">
+                            <span>👥 6x6 jogadores</span>
+                            <span>🏐 Vôlei</span>
+                        </div>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="horario">🕖 11:00</span>
+                        <a class="btn-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/602/300" alt="Quadra de vôlei de areia" />
+                    <span class="card-badge">Futebol</span>
+                    <div class="card-body">
+                        <h3>Quadra Esportiva Gol de Placa</h3>
+                        <p class="card-endereco">📍 Avenida Silva Lobo, 3270 - Nova Granada</p>
+                        <div class="card-info">
+                            <span>👥 11x11 jogadores</span>
+                            <span>⚽ Futebol</span>
+                        </div>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="horario">🕖 18:00</span>
+                        <a class="btn-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/603/300" alt="Quadra de vôlei de areia" />
+                    <span class="card-badge">Beach Tênis</span>
+                    <div class="card-body">
+                        <h3>Centro Esportivo União BH</h3>
+                        <p class="card-endereco">📍 Rua Professor Moraes, 210 - Funcionários</p>
+                        <div class="card-info">
+                            <span>👥 2×2 jogadores</span>
+                            <span>🎾 Beach Tênis</span>
+                        </div>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="horario">🕖 9:00</span>
+                        <a class="btn-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/604/300" alt="Quadra de vôlei de areia" />
+                    <span class="card-badge">Futsal</span>
+                    <div class="card-body">
+                        <h3>Arena Craques da Serra</h3>
+                        <p class="card-endereco">📍 Avenida Cristiano Machado, 8900 - São Bernardo</p>
+                        <div class="card-info">
+                            <span>👥 5×5 jogadores</span>
+                            <span>⚽ Futsal</span>
+                        </div>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="horario">🕖 20:00</span>
+                        <a class="btn-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/605/300" alt="Quadra de vôlei de areia" />
+                    <span class="card-badge">Badminton</span>
+                    <div class="card-body">
+                        <h3>Quadra Poliesportiva Horizonte Ativo</h3>
+                        <p class="card-endereco">📍 Rua Padre Eustáquio, 2565 - Padre Eustáquio</p>
+                        <div class="card-info">
+                            <span>👥 2x2 jogadores</span>
+                            <span>🏸 Badminton</span>
+                        </div>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="horario">🕖 19:00</span>
+                        <a class="btn-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </article>
+            </div>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Rachão — Feito para quem ama jogar.</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,283 @@
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+
+    --bg-page: #f5f5f5;
+    --bg-surface: #ffffff;
+
+    --text-main: #222;
+    --text-secondary: #555;
+
+    --border: #e5e7eb;
+}
+
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-page);
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.nav-logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-right: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2vw;
+}
+
+
+.nav-links li a {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.nav-links li a:hover { color: var(--primary); }
+
+.nav-links li a.btn-entrar {
+    padding: 8px 20px;
+    background: var(--primary);
+    color: var(--bg-surface);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.nav-links li a.btn-entrar:hover {
+    background: var(--primary-hover);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+/* BANNER */
+.banner {
+    background: var(--primary);
+    border-radius: 12px;
+    padding: 48px 40px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bg-surface);
+    margin-bottom: 8px;
+}
+
+.banner p {
+    color: #bfdbfe;
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+}
+
+/* FORMULÁRIO */
+.busca-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.busca-form input,
+.busca-form select {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    background: var(--bg-surface);
+    color: var(--text-main);
+    min-width: 150px;
+}
+
+.busca-form input:focus,
+.busca-form select:focus {
+    outline: 2px solid #93c5fd;
+}
+
+.busca-form button {
+    padding: 10px 24px;
+    background: var(--primary-hover);
+    color: var(--bg-surface);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.88rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.busca-form button:hover {
+    background: #1e40af;
+}
+
+/* CONTAINER DOS CARDS */
+.partidas h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    border-color: var(--primary);
+}
+
+.card img.card-img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card .card-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--primary);
+    color: var(--bg-surface);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+.card .card-body {
+    padding: 14px 16px;
+}
+
+.card .card-body h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.card .card-body .card-endereco {
+    font-size: 0.78rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.card .card-body .card-info {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.card .card-body .card-info span {
+    font-size: 0.75rem;
+    background: #f0f0f0;
+    color: var(--text-secondary);
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+.card .card-footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px 14px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.card .card-footer-row .horario {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card .card-footer-row .btn-detalhes {
+    padding: 6px 16px;
+    background: var(--primary);
+    color: var(--bg-surface);
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.card .card-footer-row .btn-detalhes:hover {
+    background: var(--primary-hover);
+}
+
+/* FOOTER */
+footer {
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border);
+    padding: 24px 32px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.82rem;
+    color: #888;
+}
+
+/* RESPONSIVO */
+@media (max-width: 860px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section.banner {
+        padding: 32px 20px;
+    }
+}
